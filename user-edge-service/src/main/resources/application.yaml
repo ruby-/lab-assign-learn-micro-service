@@ -1,0 +1,17 @@
+server:
+  name: user-service
+  port: 8082
+
+thrift:
+  user:
+    ip: ${THRIFT_USER_HOST:127.0.0.1}
+    port: ${THRIFT_USER_PORT:7911}
+  message:
+    ip: ${THRIFT_MESSAGE_HOST:127.0.0.1}
+    port: ${THRIFT_MESSAGE_PORT:9090}
+
+spring:
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+    password: ${REDIS_PASS:}
