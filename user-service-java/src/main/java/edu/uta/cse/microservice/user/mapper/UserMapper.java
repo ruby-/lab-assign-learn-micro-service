@@ -21,9 +21,10 @@ public interface UserMapper {
             "values (#{user.username}, #{user.password}, #{user.officialName}, #{user.mobile}, #{user.email})")
     void registerUser(@Param("user") UserInfo userInfo);
 
-//    @Select("Select u.id, u.username, u.official_name as realName, u.mobile, u.email, " +
+    //todo: class service
+//    @Select("Select u.id, u.username, u.officialName as official_name, u.mobile_number, u.email, " +
 //            "t.intro, t.stars " +
-//            "from pe_user u left join pe_teacher t on u.id=t.user_id " +
+//            "from pe_user u left join pe_class t on u.id=t.user_id " +
 //            "where u.id=#{id}")
-//    UserInfo getTeacherById(@Param("id") int id);
+//    UserInfo getClassesById(@Param("id") int id);
 }

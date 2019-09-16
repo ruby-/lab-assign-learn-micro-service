@@ -1,3 +1,4 @@
+![](docs/arch.png)
 # User service
 - Login
 - Registry
@@ -6,11 +7,6 @@
 - Single-point access
 - Has its own DB
 - Registry procedure requires Message service
-
-# Shopping cart service
-- Login verify
-- CURD
-- Has its own DB
 
 # Message service
 - Send email/ MSG
